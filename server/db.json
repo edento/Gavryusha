@@ -1,0 +1,47 @@
+{
+  "categories": {
+    "1": {
+      "name": "Food"
+    },
+    "2": {
+      "name": "Clothing"
+    },
+    "3": {
+      "name": "Furniture"
+    }
+  },
+  "products": {
+    "1": {
+      "name": "Elvis Presley's chewed gum",
+      "categoryId": 1,
+      "price": 12000,
+      "img": "/imgs/eye.jpg"
+    },
+    "2": {
+      "name": "Donald Trump's Belt",
+      "categoryId": 2,
+      "price": 12000,
+      "img": "/imgs/lashes.jpg"
+    },
+    "3": {
+      "name": "Michael Jackson's chewed gum",
+      "categoryId": 1,
+      "price": 12000,
+      "img": "/imgs/eye.jpg"
+    }
+  },
+  "Cart": {
+    "products": [
+      {
+        "productId": 1,
+        "amount": 2
+      },
+      {
+        "productId": 3,
+        "amount": 1
+      }
+    ],
+    "totalAmount": 3,
+    "totalPrice": 36000
+  }
+}
