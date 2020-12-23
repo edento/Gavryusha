@@ -1,51 +1,39 @@
 import React from 'react';
 import './style.scss';
-import Carousel from 'react-material-ui-carousel';
-import { Paper, Button } from '@material-ui/core';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import uuid from 'react-uuid';
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
+import ProductPreview from '../../../parts/ProductPreview';
 
-const items = [
-  {
-    name: 'Random Name #1',
-    imgSrc: '/imgs/lashes.jpg',
-  },
-  {
-    name: 'Random Name #2',
-    imgSrc: '/imgs/eye.jpg',
-  },
-  // {
-  //     name: "Random Name #2",
-  //     description: "Hello World!"
-  // }
-];
+const CategoryContainer = ({ categoryInfo }) => {
+  const { name, productsIds } = categoryInfo;
+  const { products } = useSelector((state) => state);
 
-const CategoryContainer = () => {
+  const slidesToShow = 6;
+
   return (
     <div className="category-container">
-      <h1>Caterory name</h1>
-      <Carousel>
-        {items.map((item, i) => (
-          <Item key={uuid()} item={item} />
+      <h1>{name}</h1>
+      <Slider
+        dots
+        // infinite
+        speed={500}
+        slidesToShow={productsIds.length > slidesToShow ? slidesToShow : productsIds.length}
+        // slidesToScroll={3}
+      >
+        {productsIds.map((productId) => (
+          <ProductPreview product={products[productId] || {}} key={uuid()} />
         ))}
-      </Carousel>
+      </Slider>
     </div>
   );
 };
 
-const Item = ({ item }) => {
-  return (
-    <Paper>
-      <h2 className="product-title">{item.name}</h2>
-      <img className="product-img" src={item.imgSrc} alt="product" />
-
-      <Button className="CheckButton">Check it out!</Button>
-    </Paper>
-  );
-};
-
-Item.propTypes = {
-  item: PropTypes.oneOfType([PropTypes.object]).isRequired,
+CategoryContainer.propTypes = {
+  categoryInfo: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default CategoryContainer;

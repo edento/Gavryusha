@@ -1,6 +1,9 @@
 .category-container {
-  .product-img {
-    width: 4rem;
-    height: 4rem;
+  cursor: pointer;
+  margin: 1rem 0;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }

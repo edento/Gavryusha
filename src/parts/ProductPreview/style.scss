@@ -1,0 +1,16 @@
+.product-preview.MuiCard-root {
+  width: 15rem;
+
+  .MuiCardContent-root {
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+    & > * {
+      font-weight: bold;
+    }
+  }
+
+  .MuiCardMedia-root {
+    height: 15rem;
+  }
+}

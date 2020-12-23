@@ -1,0 +1,31 @@
+.product-page {
+  .MuiContainer-root {
+    margin-top: 2rem;
+    display: flex;
+
+    .product-page_info {
+      margin-right: 1rem;
+      height: 45rem;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .MuiButton-root {
+        margin-top: auto;
+        img {
+          width: 2rem;
+          height: 2rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .product-page_img {
+      width: 45rem;
+      height: 45rem;
+    }
+  }
+}
