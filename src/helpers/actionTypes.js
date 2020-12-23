@@ -1,3 +1,3 @@
 export const GET_ALL_CATEGORIES = 'GET_ALL_CATEGORIES';
-
-export const ll = 'vcv';
+export const GET_ALL_PRODUCTS = 'GET_ALL_PRODUCTS';
+export const GET_CART = 'GET_CART';

@@ -5,7 +5,7 @@ import * as at from '../../helpers/actionTypes';
 
 export default function categoriesReducer(state = {}, { type, payload }) {
   switch (type) {
-    case at.GET_ALL_CATEGORIES: {
+    case at.GET_ALL_PRODUCTS: {
       return payload.res;
     }
 

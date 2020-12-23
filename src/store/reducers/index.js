@@ -1,14 +1,8 @@
 import { combineReducers } from 'redux';
-
-const initialState = {};
-
-function reducer(state = initialState, { type, payload }) {
-  switch (type) {
-    default:
-      return state;
-  }
-}
+import categoriesReducer from './categoriesReducer';
+import productsReducer from './productsReducer';
 
 export default combineReducers({
-  reducer,
+  categories: categoriesReducer,
+  products: productsReducer,
 });
