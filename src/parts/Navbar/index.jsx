@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss';
 import { AppBar, Toolbar, IconButton, Typography, InputBase } from '@material-ui/core';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import { Menu, Search } from '@material-ui/icons';
+import SideDrawer from '../SideDrawer';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -62,6 +63,11 @@ const useStyles = makeStyles((theme) => ({
 const Navbar = () => {
   const classes = useStyles();
 
+  const [openDrawer, setOpenDrawer] = useState(false);
+
+  const openTheDrawer = () => setOpenDrawer(true);
+  const closeTheDrawer = () => setOpenDrawer(false);
+
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -71,6 +77,7 @@ const Navbar = () => {
             className={classes.menuButton}
             color="inherit"
             aria-label="open drawer"
+            onClick={openTheDrawer}
           >
             <Menu />
           </IconButton>
@@ -92,6 +99,8 @@ const Navbar = () => {
           </div>
         </Toolbar>
       </AppBar>
+
+      <SideDrawer open={openDrawer} closeFn={closeTheDrawer} />
     </div>
   );
 };

@@ -15,5 +15,3 @@ export const getAllCategories = () => async (dispatch) => {
     console.error(err);
   }
 };
-
-export const lala = 'lala';

@@ -8,8 +8,7 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import ProductPreview from '../../../parts/ProductPreview';
 
-const CategoryContainer = ({ categoryInfo }) => {
-  const { name, productsIds } = categoryInfo;
+const CategoryPreview = ({ categoryInfo: { name, productsIds } }) => {
   const { products } = useSelector((state) => state);
 
   const slidesToShow = 6;
@@ -19,10 +18,8 @@ const CategoryContainer = ({ categoryInfo }) => {
       <h1>{name}</h1>
       <Slider
         dots
-        // infinite
         speed={500}
         slidesToShow={productsIds.length > slidesToShow ? slidesToShow : productsIds.length}
-        // slidesToScroll={3}
       >
         {productsIds.map((productId) => (
           <ProductPreview product={products[productId] || {}} key={uuid()} />
@@ -32,8 +29,8 @@ const CategoryContainer = ({ categoryInfo }) => {
   );
 };
 
-CategoryContainer.propTypes = {
+CategoryPreview.propTypes = {
   categoryInfo: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
-export default CategoryContainer;
+export default CategoryPreview;

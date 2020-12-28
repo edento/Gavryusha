@@ -11,10 +11,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
+
 const theme = createMuiTheme({
   palette: {
-    secondary: {
-      main: '#E33E7F',
+    primary: {
+      main: '#c5ab9e',
     },
   },
 });

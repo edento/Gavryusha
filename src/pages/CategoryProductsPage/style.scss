@@ -1,0 +1,35 @@
+@import '../../assests/scss/variables.scss';
+
+.category-products {
+  .category_name {
+    text-align: center;
+    margin-top: 2rem;
+    color: $brightest;
+    font-size: 10rem;
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1;
+  }
+
+  .category_img {
+    width: auto;
+    height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+  }
+
+  .category_products-container {
+    margin: 2rem auto 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 105rem;
+    .product-preview.MuiCard-root {
+      margin: 0 1rem 1rem 1rem;
+    }
+  }
+}

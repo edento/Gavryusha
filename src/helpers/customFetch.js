@@ -1,6 +1,5 @@
 export default function customFetch(originUrl, payload = null) {
   const url = `${process.env.REACT_APP_FETCH_URL}${originUrl}`;
-  console.log('🚀 ~ file: customFetch.js ~ line 5 ~ customFetch ~ url', url);
   const fPromise = payload ? fetch(url, payload) : fetch(url);
 
   return new Promise((resolve, reject) => {

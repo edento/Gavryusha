@@ -27,10 +27,11 @@ module.exports = {
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-unused-vars': ['warn', { args: 'none', argsIgnorePattern: 'req|res|next|val' }],
     'react/jsx-wrap-multilines': ['error', { arrow: true, return: true, declaration: true }],
+    'global-require': 0,
   },
   overrides: [
     {
-      files: ['src/actions/*.js'],
+      files: ['src/store/actions/*.js'],
       rules: {
         'import/prefer-default-export': 0,
       },

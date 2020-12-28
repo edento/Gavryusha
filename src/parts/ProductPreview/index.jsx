@@ -15,10 +15,10 @@ const ProductPreview = ({ product }) => {
       <CardActionArea>
         <CardMedia image={img} />
         <CardContent>
-          <Typography gutterBottom variant="p">
+          <Typography gutterBottom variant="body1">
             {name}
           </Typography>
-          <Typography gutterBottom variant="p">
+          <Typography gutterBottom variant="subtitle2">
             {`${price} $`}
           </Typography>
         </CardContent>
