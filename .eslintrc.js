@@ -31,7 +31,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['src/store/actions/*.js'],
+      files: ['**/*.js'],
       rules: {
         'import/prefer-default-export': 0,
       },

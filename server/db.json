@@ -16,8 +16,8 @@
       "productsIds": [3]
     }
   ],
-  "products": {
-    "1": {
+  "products": [
+    {
       "id": 1,
       "name": "Elvis Presley's chewed gum",
       "categoryId": 1,
@@ -25,7 +25,7 @@
       "img": "/imgs/eye.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     },
-    "2": {
+    {
       "id": 2,
       "name": "Donald Trump's Belt",
       "categoryId": 2,
@@ -33,7 +33,7 @@
       "img": "/imgs/lashes.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     },
-    "3": {
+    {
       "id": 3,
       "name": "Michael Jackson's chewed gum",
       "categoryId": 1,
@@ -41,7 +41,7 @@
       "img": "/imgs/eye.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     },
-    "4": {
+    {
       "id": 4,
       "name": "lala",
       "categoryId": 1,
@@ -49,7 +49,7 @@
       "img": "/imgs/eye.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     },
-    "5": {
+    {
       "id": 5,
       "name": "lili",
       "categoryId": 1,
@@ -57,7 +57,7 @@
       "img": "/imgs/eye.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     },
-    "6": {
+    {
       "id": 6,
       "name": "lolo",
       "categoryId": 1,
@@ -65,7 +65,7 @@
       "img": "/imgs/eye.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     },
-    "7": {
+    {
       "id": 7,
       "name": "mamama",
       "categoryId": 1,
@@ -73,7 +73,7 @@
       "img": "/imgs/eye.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     },
-    "8": {
+    {
       "id": 8,
       "name": "gigig",
       "categoryId": 1,
@@ -81,7 +81,7 @@
       "img": "/imgs/eye.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     },
-    "9": {
+    {
       "id": 9,
       "name": "pipipi",
       "categoryId": 1,
@@ -89,23 +89,7 @@
       "img": "/imgs/eye.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     }
-  },
-
-  "cart": {
-    "1": {
-      "totalAmount": 3,
-      "totalPrice": 3600,
-      "userId": "fdfdfdfdfd",
-      "cartItems": ["1bvbvbtrrer"]
-    }
-  },
-
-  "cartItems": {
-    "1bvbvbtrrer": {
-      "amount": 2,
-      "cartId": "1",
-      "productId": "1",
-      "totalPrice": 24000
-    }
-  }
+  ],
+  "cart": [],
+  "cartItems": []
 }

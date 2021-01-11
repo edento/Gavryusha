@@ -1,14 +1,21 @@
 import React from 'react';
 import './style.scss';
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
-const ProductPreview = ({ product }) => {
+const ProductPreview = ({ productId, categoryName }) => {
   const history = useHistory();
-  const { name, img, price, id: productId } = product;
+  const { pathname } = useLocation();
+  const products = useSelector((state) => state.products);
 
-  const moveToProductPage = () => history.push(`product/${productId}`);
+  const { name, img, price } = products.find((product) => product.id === productId) || {};
+
+  const moveToProductPage = () => {
+    if (pathname.includes('categories')) history.push(`${pathname}/${productId}`);
+    else history.push(`/categories/${categoryName}/${productId}`);
+  };
 
   return (
     <Card onClick={moveToProductPage} className="product-preview">
@@ -28,7 +35,8 @@ const ProductPreview = ({ product }) => {
 };
 
 ProductPreview.propTypes = {
-  product: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  productId: PropTypes.number.isRequired,
+  categoryName: PropTypes.string.isRequired,
 };
 
 export default ProductPreview;

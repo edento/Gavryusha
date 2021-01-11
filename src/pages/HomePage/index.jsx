@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import './style.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import uuid from 'react-uuid';
@@ -25,7 +25,7 @@ const HomePage = () => {
         <h5>The place where you can find rare items</h5>
       </div>
       <div className="categories-container">
-        {Object.values(categories).map((category) => (
+        {categories.map((category) => (
           <CategoryPreview categoryInfo={category} key={uuid()} />
         ))}
       </div>

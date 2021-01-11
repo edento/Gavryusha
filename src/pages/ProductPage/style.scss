@@ -1,11 +1,10 @@
 .product-page {
-  .MuiContainer-root {
-    margin-top: 2rem;
+  .product-page_content {
     display: flex;
+    padding: 2rem 25rem;
 
     .product-page_info {
-      margin-right: 1rem;
-      height: 45rem;
+      margin-left: 2rem;
       display: flex;
       flex-direction: column;
 
@@ -24,8 +23,9 @@
     }
 
     .product-page_img {
-      width: 45rem;
+      width: 40rem;
       height: 45rem;
+      object-fit: cover;
     }
   }
 }

@@ -7,22 +7,23 @@ import uuid from 'react-uuid';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import ProductPreview from '../../../parts/ProductPreview';
+import { SLIDER_DEFAULT_SLIDES_TO_SHOW } from '../../../helpers/constants';
 
 const CategoryPreview = ({ categoryInfo: { name, productsIds } }) => {
-  const { products } = useSelector((state) => state);
-
-  const slidesToShow = 6;
-
   return (
     <div className="category-container">
       <h1>{name}</h1>
       <Slider
         dots
         speed={500}
-        slidesToShow={productsIds.length > slidesToShow ? slidesToShow : productsIds.length}
+        slidesToShow={
+          productsIds.length > SLIDER_DEFAULT_SLIDES_TO_SHOW
+            ? SLIDER_DEFAULT_SLIDES_TO_SHOW
+            : productsIds.length
+        }
       >
         {productsIds.map((productId) => (
-          <ProductPreview product={products[productId] || {}} key={uuid()} />
+          <ProductPreview productId={productId} categoryName={name} key={uuid()} />
         ))}
       </Slider>
     </div>

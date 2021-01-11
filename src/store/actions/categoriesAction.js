@@ -1,14 +1,14 @@
 import * as at from '../../helpers/actionTypes';
-import customFetch from '../../helpers/customFetch';
+import API from '../../helpers/API';
 
 export const getAllCategories = () => async (dispatch) => {
   try {
-    const res = await customFetch('/categories');
+    const { data } = await API.get('/categories');
 
     dispatch({
       type: at.GET_ALL_CATEGORIES,
       payload: {
-        res,
+        data,
       },
     });
   } catch (err) {

@@ -1,9 +1,6 @@
 import React, { useMemo } from 'react';
 import './style.scss';
-import {
-  // useDispatch,
-  useSelector,
-} from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
 import Navbar from '../../parts/Navbar';
@@ -15,7 +12,7 @@ const CategoryProductsPage = () => {
 
   const currCategory = useMemo(
     () => categories.filter(({ name }) => name.toLowerCase() === categoryName)[0],
-    [categories, categoryName],
+    [categories, categoryName]
   );
 
   const { name, img, productsIds } = currCategory;
@@ -23,7 +20,7 @@ const CategoryProductsPage = () => {
   const productsArr = useMemo(
     () => productsIds.map((productId) => products[productId]),
     productsIds,
-    categoryName,
+    categoryName
   );
 
   return (
@@ -33,7 +30,7 @@ const CategoryProductsPage = () => {
       <div className="category_img" style={{ backgroundImage: `url(${img})` }} />
       <div className="category_products-container">
         {productsArr.map((product) => (
-          <ProductPreview product={product} />
+          <ProductPreview product={product} key={product.id} />
         ))}
       </div>
     </div>
