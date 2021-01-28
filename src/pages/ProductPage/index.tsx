@@ -3,22 +3,26 @@ import './style.scss';
 import { useParams, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { Button } from '@material-ui/core';
+import { Dispatch } from 'redux';
 import Navbar from '../../parts/Navbar';
-import { addItemToChart } from '../../store/actions/cartAction';
+import { addNewItemToChart } from '../../store/actions/cart.action';
+import { MainState } from '../../types/store';
+import { Product } from '../../types/general';
 
-const ProductPage = () => {
-  const dispatch = useDispatch();
+const ProductPage: React.FC = () => {
+  const dispatch = useDispatch<Dispatch<any>>();
+  const { productId } = useParams<any>();
   const history = useHistory();
-  const { productId } = useParams();
 
-  const currProduct = useSelector(({ products }) => products[productId]);
-  if (!currProduct) history.push('/home');
-  const { name, img, price, description } = currProduct || {};
+  const currProduct = useSelector<MainState, Product>(({ products }) => products[productId]);
 
   const addToTheChart = useCallback(() => {
-    dispatch(addItemToChart(currProduct));
+    dispatch(addNewItemToChart(currProduct));
   }, []);
 
+  const { name, img, price, description } = currProduct || {};
+
+  if (!currProduct) history.push('/home');
   return (
     <div className="product-page">
       <Navbar />

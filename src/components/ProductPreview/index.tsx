@@ -1,20 +1,24 @@
 import React from 'react';
 import './style.scss';
-import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import { MainState } from '../../types/store';
+import { Product } from '../../types/general';
 
-const ProductPreview = ({ productId, categoryName }) => {
+interface Props {
+  productId: number;
+  categoryName: string;
+}
+
+const ProductPreview: React.FC<Props> = ({ productId, categoryName }) => {
   const history = useHistory();
-  const { pathname } = useLocation();
-  const products = useSelector((state) => state.products);
+  const products = useSelector<MainState, Product[]>((state) => state.products);
 
   const { name, img, price } = products.find((product) => product.id === productId) || {};
 
   const moveToProductPage = () => {
-    if (pathname.includes('categories')) history.push(`${pathname}/${productId}`);
-    else history.push(`/categories/${categoryName}/${productId}`);
+    history.push(`/categories/${categoryName}/${productId}`);
   };
 
   return (
@@ -32,11 +36,6 @@ const ProductPreview = ({ productId, categoryName }) => {
       </CardActionArea>
     </Card>
   );
-};
-
-ProductPreview.propTypes = {
-  productId: PropTypes.number.isRequired,
-  categoryName: PropTypes.string.isRequired,
 };
 
 export default ProductPreview;

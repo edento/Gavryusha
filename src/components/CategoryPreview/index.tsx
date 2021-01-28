@@ -3,13 +3,18 @@ import './style.scss';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import uuid from 'react-uuid';
-import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
-import ProductPreview from '../../../parts/ProductPreview';
-import { SLIDER_DEFAULT_SLIDES_TO_SHOW } from '../../../helpers/constants';
+import { v4 as uuidv4 } from 'uuid';
+import { Category } from '../../types/general';
+import ProductPreview from '../ProductPreview';
+import { SLIDER_DEFAULT_SLIDES_TO_SHOW } from '../../helpers/constants';
 
-const CategoryPreview = ({ categoryInfo: { name, productsIds } }) => {
+interface Props {
+  categoryInfo: Category;
+}
+
+const CategoryPreview: React.FC<Props> = ({ categoryInfo }) => {
+  const { name, productsIds } = categoryInfo;
+
   return (
     <div className="category-container">
       <h1>{name}</h1>
@@ -23,15 +28,11 @@ const CategoryPreview = ({ categoryInfo: { name, productsIds } }) => {
         }
       >
         {productsIds.map((productId) => (
-          <ProductPreview productId={productId} categoryName={name} key={uuid()} />
+          <ProductPreview productId={productId} categoryName={name} key={uuidv4()} />
         ))}
       </Slider>
     </div>
   );
-};
-
-CategoryPreview.propTypes = {
-  categoryInfo: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default CategoryPreview;

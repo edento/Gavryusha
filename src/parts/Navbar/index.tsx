@@ -4,6 +4,7 @@ import { AppBar, Toolbar, IconButton, Typography, InputBase } from '@material-ui
 import { fade, makeStyles } from '@material-ui/core/styles';
 import { Menu, Search } from '@material-ui/icons';
 import SideDrawer from '../SideDrawer';
+import ChartIcon from '../CartIcon';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,13 +61,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const classes = useStyles();
 
-  const [openDrawer, setOpenDrawer] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
-  const openTheDrawer = () => setOpenDrawer(true);
-  const closeTheDrawer = () => setOpenDrawer(false);
+  const openTheDrawer = (): void => setOpenDrawer(true);
+  const closeTheDrawer = (): void => setOpenDrawer(false);
 
   return (
     <div className={classes.root}>
@@ -84,6 +85,7 @@ const Navbar = () => {
           <Typography className={classes.title} variant="h6" noWrap>
             Gavryusha
           </Typography>
+          <ChartIcon />
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <Search />

@@ -1,3 +1,5 @@
 export const GET_ALL_CATEGORIES = 'GET_ALL_CATEGORIES';
 export const GET_ALL_PRODUCTS = 'GET_ALL_PRODUCTS';
 export const GET_CART = 'GET_CART';
+
+export const UPDATE_CART = 'UPDATE_CART';

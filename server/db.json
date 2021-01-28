@@ -3,17 +3,29 @@
     {
       "name": "Food",
       "img": "/imgs/garbage1.jpg",
-      "productsIds": [1, 4, 5, 6, 7, 8, 9]
+      "productsIds": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "name": "Clothing",
       "img": "/imgs/garbage1.jpg",
-      "productsIds": [2]
+      "productsIds": [
+        2
+      ]
     },
     {
       "name": "Furniture",
       "img": "/imgs/garbage1.jpg",
-      "productsIds": [3]
+      "productsIds": [
+        3
+      ]
     }
   ],
   "products": [
@@ -90,6 +102,30 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at scelerisque purus, ac pulvinar metus. Donec ac orci quam. Suspendisse mattis mollis turpis, sit amet imperdiet est faucibus vitae. Suspendisse ut sem posuere, aliquam erat sit amet, accumsan purus. Maecenas vel lacus interdum, condimentum nisi suscipit, mattis ligula. Morbi varius facilisis feugiat. Quisque sollicitudin dapibus eros. Curabitur molestie lorem quam, sed bibendum lectus ultrices efficitur. Aenean vel convallis enim."
     }
   ],
-  "cart": [],
-  "cartItems": []
+  "cart": [
+    {
+      "totalAmount": 0,
+      "totalPrice": 0,
+      "cartItemsIds": [],
+      "id": 1
+    },
+    {
+      "totalAmount": 1,
+      "totalPrice": 12000,
+      "cartItemsIds": [
+        1
+      ],
+      "id": 2
+    }
+  ],
+  "cartItems": [
+    {
+      "amount": 1,
+      "cartId": "2",
+      "productId": 5,
+      "totalPrice": 12000,
+      "unitPrice": 12000,
+      "id": 1
+    }
+  ]
 }

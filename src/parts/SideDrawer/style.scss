@@ -1,5 +1,9 @@
+@import '../../assests/scss/variables.scss';
+
 .side-drawer {
   .MuiDrawer-paper {
     width: 15rem;
+    background-color: $brightest;
+    color: $dark;
   }
 }
