@@ -1,23 +1,25 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './style.scss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { Dispatch } from 'redux';
+// import { Dispatch } from 'redux';
 import { MainState } from '../../types/store';
 import { Category } from '../../types/general';
 import Navbar from '../../parts/Navbar';
 import CategoryPreview from '../../components/CategoryPreview';
-import { getAllCategories } from '../../store/actions/category.action';
-import { getAllProducts } from '../../store/actions/product.action';
+// import { getAllCategories } from '../../store/actions/category.action';
+// import { getAllProducts } from '../../store/actions/product.action';
+// import { getCart } from '../../store/actions/cart.action';
 
 const HomePage: React.FC = () => {
-  const dispatch = useDispatch<Dispatch<any>>();
+  // const dispatch = useDispatch<Dispatch<any>>();
   const categories = useSelector<MainState, Category[]>((state) => state.categories);
 
-  useEffect(() => {
-    dispatch(getAllCategories());
-    dispatch(getAllProducts());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(getAllCategories());
+  //   dispatch(getAllProducts());
+  //   dispatch(getCart());
+  // }, [dispatch]);
 
   return (
     <div className="home-page">

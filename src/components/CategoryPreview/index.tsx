@@ -18,15 +18,7 @@ const CategoryPreview: React.FC<Props> = ({ categoryInfo }) => {
   return (
     <div className="category-container">
       <h1>{name}</h1>
-      <Slider
-        dots
-        speed={500}
-        slidesToShow={
-          productsIds.length > SLIDER_DEFAULT_SLIDES_TO_SHOW
-            ? SLIDER_DEFAULT_SLIDES_TO_SHOW
-            : productsIds.length
-        }
-      >
+      <Slider dots speed={500} slidesToShow={productsIds.length > SLIDER_DEFAULT_SLIDES_TO_SHOW ? SLIDER_DEFAULT_SLIDES_TO_SHOW : productsIds.length}>
         {productsIds.map((productId) => (
           <ProductPreview productId={productId} categoryName={name} key={uuidv4()} />
         ))}

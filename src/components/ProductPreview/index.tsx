@@ -15,7 +15,7 @@ const ProductPreview: React.FC<Props> = ({ productId, categoryName }) => {
   const history = useHistory();
   const products = useSelector<MainState, Product[]>((state) => state.products);
 
-  const { name, img, price } = products.find((product) => product.id === productId) || {};
+  const { name, img, price } = products.find((product) => product.id === productId) || ({} as Product);
 
   const moveToProductPage = () => {
     history.push(`/categories/${categoryName}/${productId}`);

@@ -1,11 +1,12 @@
 @import 'breakpoints.scss';
 @import 'variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Heebo');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Open Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  font-family: Heebo, Helvetica, Arial, sans-serif;
 
   @include for_breakpoint(mobile) {
     font-size: 8px;
@@ -28,4 +29,6 @@
   width: 100%;
   min-height: 100vh;
   background-color: $dark;
+  color: $brightest;
+  font-weight: 300;
 }

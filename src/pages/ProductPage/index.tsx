@@ -4,6 +4,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { Button } from '@material-ui/core';
 import { Dispatch } from 'redux';
+import _ from 'lodash';
 import Navbar from '../../parts/Navbar';
 import { addNewItemToChart } from '../../store/actions/cart.action';
 import { MainState } from '../../types/store';
@@ -11,13 +12,16 @@ import { Product } from '../../types/general';
 
 const ProductPage: React.FC = () => {
   const dispatch = useDispatch<Dispatch<any>>();
-  const { productId } = useParams<any>();
+  const { productId } = useParams<{ productId: string }>();
   const history = useHistory();
 
-  const currProduct = useSelector<MainState, Product>(({ products }) => products[productId]);
+  const numaricProductId: number = productId ? parseInt(productId, 10) : 0;
+  const products = useSelector<MainState, Product[]>((state) => state.products);
+  const currProduct = products.find(({ id }) => id === numaricProductId) || ({} as Product);
 
   const addToTheChart = useCallback(() => {
-    dispatch(addNewItemToChart(currProduct));
+    if (_.isEmpty(currProduct)) alert('Product doesnt exist');
+    else dispatch(addNewItemToChart(currProduct!));
   }, []);
 
   const { name, img, price, description } = currProduct || {};

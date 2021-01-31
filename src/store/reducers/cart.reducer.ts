@@ -1,7 +1,7 @@
 // import produce from 'immer';
 import * as at from '../actionTypes';
 import { Action } from '../../types/store';
-import { Cart } from '../../types/general';
+import { Cart, CartItem } from '../../types/general';
 
 const initialState = {} as Cart;
 

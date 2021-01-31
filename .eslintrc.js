@@ -16,6 +16,9 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:react-hooks/recommended',
     'eslint:recommended',
+    'prettier',
+    'prettier/react',
+    'prettier/standard',
     // "plugin:import/typescript",
     // "plugin:@typescript-eslint/eslint-recommended",
     // "plugin:@typescript-eslint/recommended"
@@ -37,12 +40,13 @@ module.exports = {
   plugins: ['react', 'prettier', 'import', '@typescript-eslint'],
   rules: {
     'linebreak-style': 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto',
-      },
-    ],
+    'prettier/prettier': 0,
+    // [
+    //   'error',
+    //   {
+    //     // endOfLine: 'auto',
+    //   },
+    // ],
     'no-use-before-define': ['error', { functions: false, classes: true }],
     'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['draft'] }],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],

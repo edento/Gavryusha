@@ -3,3 +3,4 @@ export const GET_ALL_PRODUCTS = 'GET_ALL_PRODUCTS';
 export const GET_CART = 'GET_CART';
 
 export const UPDATE_CART = 'UPDATE_CART';
+export const GET_ALL_CART_ITEMS = 'GET_ALL_CART_ITEMS';

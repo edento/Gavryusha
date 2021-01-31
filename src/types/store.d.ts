@@ -1,4 +1,6 @@
 import { Category, Product, Cart } from './general';
+import { ThunkDispatch } from 'redux-thunk';
+// import { AnyAction } from 'redux';
 
 // Redux types
 export type MainState = {
@@ -15,4 +17,4 @@ export interface Action<T> {
   };
 }
 
-export type DispatchType<T> = (args: Action<T>) => Action<T>;
+export type DispatchType<T> = ThunkDispatch<State, any, Action<T>>;

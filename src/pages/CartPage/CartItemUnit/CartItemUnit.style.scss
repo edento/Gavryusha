@@ -1,0 +1,38 @@
+@import '../../../assests//scss/variables.scss';
+.cart-item {
+  display: flex;
+  margin: 1rem 0;
+  width: 100%;
+  .cart-item_img {
+    width: 8rem;
+    height: 10rem;
+    margin-right: 2rem;
+    object-fit: cover;
+  }
+
+  .cart-item_info {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      line-height: 1.5rem;
+      span {
+        margin-right: 0.5rem;
+      }
+    }
+    .cart-item_info_total-price {
+      margin-top: auto;
+    }
+  }
+
+  .MuiIconButton-root {
+    margin: auto 0 auto auto;
+    height: fit-content;
+
+    .MuiSvgIcon-root {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: $brightest;
+    }
+  }
+}

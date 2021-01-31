@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './style.scss';
-import { AppBar, Toolbar, IconButton, Typography, InputBase } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Typography, InputBase, Button } from '@material-ui/core';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import { Menu, Search } from '@material-ui/icons';
+import { useHistory } from 'react-router-dom';
 import SideDrawer from '../SideDrawer';
-import ChartIcon from '../CartIcon';
+import ChartIcon from '../CartIcon/CartIcon.index';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,26 +64,22 @@ const useStyles = makeStyles((theme) => ({
 
 const Navbar: React.FC = () => {
   const classes = useStyles();
+  const history = useHistory();
 
   const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
   const openTheDrawer = (): void => setOpenDrawer(true);
   const closeTheDrawer = (): void => setOpenDrawer(false);
+  const moveToHomePage = () => history.push('/home');
 
   return (
-    <div className={classes.root}>
+    <div className={`${classes.root} navbar`}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-            onClick={openTheDrawer}
-          >
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="open drawer" onClick={openTheDrawer}>
             <Menu />
           </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography className={`${classes.title} brand-name`} variant="h6" noWrap onClick={moveToHomePage}>
             Gavryusha
           </Typography>
           <ChartIcon />

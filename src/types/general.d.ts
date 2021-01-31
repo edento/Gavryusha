@@ -18,6 +18,7 @@ export type Cart = {
   totalPrice: number;
   cartItemsIds: number[];
   id: number;
+  cartItems?: CartItem[];
 };
 
 export type CartItem = {

@@ -6,17 +6,15 @@ const CartService = {
     try {
       const cartId: string | null = localStorage.getItem('cartId');
       if (!cartId) throw Error('cart not exist!');
-      const { data } = await API.get<Cart>(`/cart/${cartId}`);
+      const { data } = await API.get<Cart>(`/cart/${cartId}?_embed=cartItems&&_embed=products`);
       return data;
     } catch (err) {
       console.error(err.message);
+      return undefined;
     }
   },
 
-  async addNewItemToCart(
-    cartId: number,
-    { price: productPrice, id: productId }: Product
-  ): Promise<Cart | undefined> {
+  async addNewItemToCart(cartId: number, { price: productPrice, id: productId }: Product): Promise<Cart | undefined> {
     try {
       const { data: currCart } = await API.get<Cart>(`/cart/${cartId}`);
       const { totalAmount, totalPrice, cartItemsIds } = currCart;
@@ -43,6 +41,7 @@ const CartService = {
       return data;
     } catch (err) {
       console.error(err.message);
+      return undefined;
     }
   },
 
@@ -61,6 +60,17 @@ const CartService = {
       return id;
     } catch (err) {
       console.error(err.message);
+      return undefined;
+    }
+  },
+
+  async getAllMyCartItems(cartId: number): Promise<CartItem[] | undefined> {
+    try {
+      const { data } = await API.get<CartItem[]>(`/cartItems?cartId=${cartId}`);
+      return data;
+    } catch (err) {
+      console.error(err.message);
+      return undefined;
     }
   },
 };

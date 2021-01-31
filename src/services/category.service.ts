@@ -8,6 +8,7 @@ const CategoryService = {
       return data;
     } catch (err) {
       console.error(err.message);
+      return undefined;
     }
   },
 };

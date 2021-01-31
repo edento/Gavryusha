@@ -110,12 +110,25 @@
       "id": 1
     },
     {
-      "totalAmount": 1,
-      "totalPrice": 12000,
+      "totalAmount": 3,
+      "totalPrice": 36000,
       "cartItemsIds": [
-        1
+        1,
+        2,
+        4
       ],
       "id": 2
+    },
+    {
+      "totalAmount": 4,
+      "totalPrice": 48000,
+      "cartItemsIds": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "id": 3
     }
   ],
   "cartItems": [
@@ -126,6 +139,54 @@
       "totalPrice": 12000,
       "unitPrice": 12000,
       "id": 1
+    },
+    {
+      "amount": 1,
+      "cartId": "2",
+      "productId": 6,
+      "totalPrice": 12000,
+      "unitPrice": 12000,
+      "id": 2
+    },
+    {
+      "amount": 1,
+      "cartId": 3,
+      "productId": 5,
+      "totalPrice": 12000,
+      "unitPrice": 12000,
+      "id": 3
+    },
+    {
+      "amount": 1,
+      "cartId": 2,
+      "productId": 5,
+      "totalPrice": 12000,
+      "unitPrice": 12000,
+      "id": 4
+    },
+    {
+      "amount": 1,
+      "cartId": 3,
+      "productId": 6,
+      "totalPrice": 12000,
+      "unitPrice": 12000,
+      "id": 5
+    },
+    {
+      "amount": 1,
+      "cartId": 3,
+      "productId": 3,
+      "totalPrice": 12000,
+      "unitPrice": 12000,
+      "id": 6
+    },
+    {
+      "amount": 1,
+      "cartId": 3,
+      "productId": 3,
+      "totalPrice": 12000,
+      "unitPrice": 12000,
+      "id": 7
     }
   ]
 }
